@@ -1,17 +1,17 @@
-from __future__ import print_function
 import os
 import time
 import random
+import Dataset
 import argparse
+import model as M
+import util as Util
 import torch.nn as nn
 import torch.nn.parallel
 import torch.optim as optim
 import torchvision.utils as vutils
 from torch.autograd import Variable
+from __future__ import print_function
 import torchvision.transforms as transforms
-import model as M
-import util as Util
-import Dataset
 from torch.utils.serialization import load_lua
 
 
